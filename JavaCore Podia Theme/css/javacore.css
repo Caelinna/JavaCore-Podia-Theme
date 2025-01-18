@@ -1,0 +1,47 @@
+body div.container-fluid.container-padding {
+    padding-bottom: 4.25rem;
+}
+
+/* Couleur de l'icon de validation du contenu des chapitres */
+path[d^="M5.44 1.6899"]{
+    fill: green !important;
+}
+
+/* Réduit l'opacité des liens validés dans la colonne de navigation latéral*/
+#customer-sidebar li.action-list-item:has(path[d^="M5.44 1.6899"]/* Checked icon */) {
+    opacity: .5 !important;
+}
+
+/* Réduit la taille de police des titres du contenu des chapitres dans la colonne de navigation latéral*/
+#customer-sidebar ol li {
+    font-size: .75rem !important;
+}
+
+/* Tronquage des textes dans la navigation latérale */
+#customer-sidebar ol li a span.action-list-item__label.action-list-item__label--wrap {
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+}
+
+/* Affiche une scroll-bar dans la colonne de navigation latérale */
+#customer-sidebar {
+    height: 80vh !important;
+    overflow-y: scroll !important;
+    scrollbar-width: thin !important;
+    position: sticky;
+    top: 20px;
+}
+
+/*  Empêche la création d'une scrollbar sur l'axe X dans la navigation latérale */
+#customer-sidebar ol {
+    padding: 0 .8rem !important;
+}
+
+.main-content [aria-label="breadcrumb"] {
+    margin-bottom: 20px !important;
+}
+
+.main-content iframe {
+    border-radius: 20px !important;
+}

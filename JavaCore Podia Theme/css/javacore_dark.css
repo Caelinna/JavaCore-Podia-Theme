@@ -1,0 +1,154 @@
+:root {
+    --color-bg: #1e1e1e;
+    --color-text: #ffffff;
+    --color-icon: #ffffff;
+    --color-bg-hover: #2a2a2a;
+    --color-bg-selected: #333333;
+    --color-jiraws-orange: #EA921E;
+    --color-jiraws-blue: #1F80E4;
+    --color-code-bg: #2B2B2B;
+    --color-scrollbar-bg: #424242;
+    --color-thumb-bg: #7b7b7b;
+    --color-btn-hover: #444444;
+    --color-completion-btn-bg: #06040E;
+}
+
+body,
+#customer-sidebar ul[role="list"] li {
+    background-color: var(--color-bg) !important;
+}
+
+path:not(path[
+    /*quiz incorrect icon*/
+    d^="M8 0.888885C"],
+    path[
+    /*quiz correct icon*/
+    d^="M8 0.888916C"],
+    path[
+    /* Checked icon */
+    d^="M5.44 1.6899"
+
+    ]) {
+    fill: var(--color-icon) !important;
+}
+
+hr {
+    border-top: 1px solid rgb(255 255 255 / 10%) !important;
+}
+
+body,
+h4,
+#customer-sidebar span,
+#customer-sidebar a,
+.main-content h1,
+.main-content h2,
+.main-content p,
+.main-content .btn,
+.main-content .card-title,
+.main-content ol.breadcrumb li a.text-muted:hover,
+/* chapter card */
+.main-content .card .card-body li .action-list-item__label,
+/* Quiz card */
+.main-content .card-body li.correct,
+/* Quiz card */
+.main-content .card-body li.incorrect,
+/* PDF Card */
+.main-content .card-body a,
+/* PDF Card */
+.main-content div.card-body a:hover,
+.main-content #lesson-content pre,
+.main-content #lesson-content pre span,
+/* DL Resource */
+.main-content #lesson-content .rich-text--file-wrapper span {
+    color: var(--color-text) !important;
+}
+
+#customer-sidebar summary:hover,
+#customer-sidebar ul li:hover,
+/* chapter card */
+.main-content .card .card-body li:hover,
+/* PDF Card */
+.main-content div.card-body a:hover,
+/* DL Resource */
+.main-content #lesson-content .rich-text--file-wrapper a:hover {
+    background-color: var(--color-bg-hover) !important;
+}
+
+#customer-sidebar ol li[active="true"],
+/* Quiz card */
+.main-content .card-body ol li.selected {
+    background: var(--color-bg-selected) !important;
+}
+
+#customer-sidebar,
+/* exos */
+.main-content #lesson-content pre {
+    scrollbar-color: var(--color-thumb-bg) var(--color-scrollbar-bg) !important;
+}
+
+.main-content #completion-button a {
+    background: var(--color-completion-btn-bg) !important;
+}
+
+/* chapter card */
+.main-content .card,
+/* chapter card */
+.main-content .card .card-body li,
+/* PDF Card */
+.main-content .card-body a,
+/* exos */
+.main-content #lesson-content pre,
+/* DL Resource */
+.main-content #lesson-content .rich-text--file-wrapper a {
+    background: var(--color-bg) !important;
+}
+
+.main-content code {
+    background: var(--color-code-bg) !important;
+    color: var(--color-jiraws-orange) !important;
+}
+
+/* Quiz card */
+.main-content .card-body label::before {
+    background: black !important;
+    padding: 0 !important;
+}
+
+/* Quiz card */
+.main-content .card-body li.answer:hover label::before {
+    background: black !important;
+}
+
+/* Quiz card */
+.main-content .card-body ol li.selected {
+    box-shadow: inset 0px 0px 0px 2px #383838 !important;
+}
+
+/* Quiz card */
+.main-content .card-body li.correct {
+    box-shadow: inset 0px 0px 0px 2px #006D3C !important;
+}
+
+/* Quiz card */
+.main-content .card-body li.incorrect {
+    box-shadow: inset 0px 0px 0px 2px #A01910 !important;
+}
+
+.main-content .btn:hover {
+    background: var(--color-btn-hover) !important;
+}
+
+/* PDF Card */
+.main-content .card-body .list-group-icon,
+.main-content .card-body .list-group-icon:hover {
+    background: linear-gradient(180deg, var(--color-jiraws-blue) 5%, var(--color-jiraws-orange)95%) !important;
+}
+
+/* Github iframe */
+iframe[src*="github"] {
+    filter: invert(1) hue-rotate(180deg);
+}
+
+.main-content #lesson-content .text-longform a {
+    color: var(--color-jiraws-blue) !important;
+}
